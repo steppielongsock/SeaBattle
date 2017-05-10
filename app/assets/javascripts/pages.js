@@ -7,7 +7,7 @@ function drawGrid(canvasID) {
 
   //vertical lines
   for (i=0; i < 397; i += 36) {
-    ctx.lineWidth = (1+((i%10) == 0));
+    ctx.lineWidth = (1);
     ctx.moveTo(0,i);
     ctx.lineTo(396, i);
     ctx.stroke();
@@ -15,7 +15,7 @@ function drawGrid(canvasID) {
 
   //horizontal line
   for (i=0; i < 397; i+=36) {
-    ctx.lineWidth = (1.0+((i%10) == 0));
+    ctx.lineWidth = (1);
     ctx.moveTo(i,0);
     ctx.lineTo(i, 396);
     ctx.stroke();
@@ -50,7 +50,8 @@ function drawGrid(canvasID) {
 
   c.addEventListener('mousemove', function(evt) {
     var mousePos = getMousePos(c, evt);
-    var message = 'Mouse position: ' + mousePos.x + ' , ' + mousePos.y;
+    var message = canvasID + ' Mouse position: ' + mousePos.x + ' , ' + mousePos.y;
     document.getElementById(canvasID + "Cord").innerHTML =  message;
   }, false);
 }
+

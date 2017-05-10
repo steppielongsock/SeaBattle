@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+  $( "#drag").draggable( { grid: [ 35, 35 ] } );
+});

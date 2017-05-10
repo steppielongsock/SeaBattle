@@ -1,12 +1,22 @@
 <h1>Pages#game</h1>
- <canvas id="OceanGrid" width="398" height="398">Your browser does not suport the HTML canvas tag.</canvas><br>
-  <div id="OceanGridCord"></div>
+
+<!-- I think I can move this canvas drawing into the js file and then use the draw grid function only -->
+<div>
+  <canvas style="margin: 0px 36px 0px 36px; border: 0px;" id="OceanGrid" width="398" height="398" class="inline">Your browser does not suport the HTML canvas tag.</canvas>
+
   <script>
     drawGrid('OceanGrid');
   </script>
 
-  <canvas id="TargetGrid" width="398" height="398">Your browser does not suport the HTML canvas tag.</canvas><br>
-  <div id="TargetGridCord"></div>
+  <canvas style="margin:36px;" id="TargetGrid" width="398" height="398" class="inline">Your browser does not suport the HTML canvas tag.</canvas>
+
   <script>
     drawGrid('TargetGrid');
   </script>
+</div>
+<div>
+  <div style="padding: 100px;" id="OceanGridCord" class="inline"></div>
+  <div style="padding: 75px;" id="TargetGridCord" class="inline"></div>
+</div>
+
+<div id="drag"></div>
