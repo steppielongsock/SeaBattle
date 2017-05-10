@@ -6,18 +6,18 @@ function drawGrid(canvasID) {
   var i;
 
   //vertical lines
-  for (i=0; i < 397; i += 36) {
+  for (i=0; i < 386; i += 35) {
     ctx.lineWidth = (1);
     ctx.moveTo(0,i);
-    ctx.lineTo(396, i);
+    ctx.lineTo(385, i);
     ctx.stroke();
   };
 
   //horizontal line
-  for (i=0; i < 397; i+=36) {
+  for (i=0; i < 386; i+=35) {
     ctx.lineWidth = (1);
     ctx.moveTo(i,0);
-    ctx.lineTo(i, 396);
+    ctx.lineTo(i, 385);
     ctx.stroke();
   };
   // End drawing game grid
@@ -28,7 +28,7 @@ function drawGrid(canvasID) {
     ctx.font = '18pt Calibri';
     ctx.fillStyle = 'black';
     ctx.textBaseline = 'alphabetic';
-    ctx.fillText(alpha[i], positionX += 36, 27);
+    ctx.fillText(alpha[i], positionX += 35.4, 26);
   };
   // Filling in the Numbers
   var positionY = 27
@@ -36,7 +36,7 @@ function drawGrid(canvasID) {
     ctx.font = '18pt Calibri';
     ctx.fillStyle = 'black';
     ctx.textAlign = 'center';
-    ctx.fillText(i + 1, 18, positionY += 36);
+    ctx.fillText(i + 1, 18, positionY += 35);
   };
 
 

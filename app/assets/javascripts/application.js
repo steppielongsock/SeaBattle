@@ -17,5 +17,5 @@
 //= require_tree .
 
 $(document).ready(function(){
-  $( "#drag").draggable( { grid: [ 35, 35 ] } );
-});
+  $( "#drag").draggable( { grid: [35, 35] } );
+} );
