@@ -10,7 +10,34 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *
  *= require_tree .
  *= require_self
  *= require jquery-ui
  */
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+.masthead {
+  padding-bottom: 30px;
+}
+.header {
+  text-align: center;
+  border: 1px solid blue;
+  height: 150px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.navigation {
+  display: inline;
+  margin-left: 20px;
+  padding: 0px 10px 0px 10px;
+  
+}
+.navigation a {
+  text-decoration: none;
+}

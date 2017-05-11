@@ -16,6 +16,13 @@
 //= require turbolinks
 //= require_tree .
 
+
 $(document).ready(function(){
-  $( "#drag").draggable( { grid: [35, 35] } );
+  //+++++++++++TO DO +++++++++++++++
+  // Need to refactor this so all ships can use this one draggable right now I'm keeping one for each ship
+  $( "#destroyer").draggable( { grid: [35, 35] } );
+  $( "#submarine").draggable( { grid: [35, 35] } );
+  $( "#cruiser").draggable( { grid: [35, 35] } );
+  $( "#battleship").draggable( { grid: [35, 35] } );
+  $( "#carrier").draggable( { grid: [35, 35] } );
 } );

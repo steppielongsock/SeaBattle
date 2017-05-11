@@ -1,0 +1,38 @@
+/*  Ships  */
+
+#destroyer {
+  height: 36px;
+  width: 72px;
+  border: 0px;
+  background-color: blue;
+  position: absolute;
+}
+
+#submarine {
+  height: 36px;
+  width: 108px;
+  border: 0px;
+  background-color: red;
+  position: absolute;
+}
+#cruiser {
+  height: 36px;
+  width: 108px;
+  border: 0px;
+  background-color: green;
+  position: absolute;
+}
+#battleship {
+  height: 36px;
+  width: 144px;
+  border: 0px;
+  background-color: purple;
+  position: absolute;
+}
+#carrier {
+  height: 36px;
+  width: 180px;
+  border: 0px;
+  background-color: black;
+  position: absolute;
+}

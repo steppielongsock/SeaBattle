@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SeaBattle</title>
+    <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
   </head>
 
-  <body> 
+  <body>
+    <%= render "shared/nav" %> 
     <%= yield %>
+    <%= render "shared/footer" %>
   </body>
 </html>
